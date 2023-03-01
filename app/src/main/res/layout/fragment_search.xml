@@ -1,126 +1,173 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="#2C2F49"
     tools:context=".ui.search.SearchFragment">
 
-<RelativeLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    >
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp"
-        android:id="@+id/project_lay1"
-        >
-        <com.google.android.material.card.MaterialCardView
-            android:layout_width="160dp"
-            android:layout_height="160dp"
-            app:cardElevation="0dp"
-            android:layout_margin="10dp"
-            app:cardCornerRadius="20dp"
-            app:cardBackgroundColor="#4D000000">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-            <TextView
-                android:id="@+id/upcoming_ev"
-                android:layout_width="96dp"
-                android:layout_height="57dp"
+        <LinearLayout
+            android:id="@+id/search_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical">
 
-               android:layout_gravity="center"
-                android:text="@string/upcoming_ev3"
-                android:textAppearance="@style/upcoming_ev3"
-
-                />
-        </com.google.android.material.card.MaterialCardView>
-        <com.google.android.material.card.MaterialCardView
-            android:layout_width="160dp"
-            android:layout_height="160dp"
-            app:cardElevation="0dp"
-            android:layout_margin="10dp"
-            app:cardCornerRadius="20dp"
-            app:cardBackgroundColor="#4D000000">
-            <TextView
-                android:id="@+id/projects"
-                android:layout_width="wrap_content"
+            <EditText
+                android:layout_width="338dp"
                 android:layout_height="wrap_content"
-
-              android:layout_gravity="center"
-                android:text="@string/projects2"
-                android:textAppearance="@style/projects2"
-
-
-                />
-
-        </com.google.android.material.card.MaterialCardView>
-
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
-        android:id="@+id/project_lay2"
-        android:layout_below="@+id/project_lay1"
-        >
-        <com.google.android.material.card.MaterialCardView
-            android:layout_width="160dp"
-            android:layout_height="160dp"
-            app:cardElevation="0dp"
-            android:layout_margin="10dp"
-            app:cardCornerRadius="20dp"
-            app:cardBackgroundColor="#4D000000"/>
-        <com.google.android.material.card.MaterialCardView
-            android:layout_width="160dp"
-            android:layout_height="160dp"
-            app:cardElevation="0dp"
-            android:layout_margin="10dp"
-            app:cardCornerRadius="20dp"
-            app:cardBackgroundColor="#4D000000">
-            <TextView
-                android:id="@+id/communities"
-                android:layout_width="127dp"
-                android:layout_height="23dp"
-                android:text="@string/communities2"
-                android:textAppearance="@style/communities2"
                 android:layout_gravity="center"
-                />
+                android:background="@drawable/search_bg"
+                android:drawableRight="@drawable/search_icon"
+                android:hint="@string/search_hint"
+                android:textAppearance="@style/search_hint"
+                android:textColor="@color/white"
+                android:textColorHint="#70FFFFFF">
 
-        </com.google.android.material.card.MaterialCardView>
+            </EditText>
 
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
-        android:id="@+id/project_lay3"
-        android:layout_below="@+id/project_lay2"
-        >
-        <com.google.android.material.card.MaterialCardView
-            android:layout_width="160dp"
-            android:layout_height="160dp"
-            app:cardElevation="0dp"
-            android:layout_margin="10dp"
-            app:cardCornerRadius="20dp"
-            app:cardBackgroundColor="#4D000000"/>
-        <com.google.android.material.card.MaterialCardView
-            android:layout_width="160dp"
-            android:layout_height="160dp"
-            app:cardElevation="0dp"
-            android:layout_margin="10dp"
-            app:cardCornerRadius="20dp"
-            app:cardBackgroundColor="#4D000000"/>
+        </LinearLayout>
 
-    </LinearLayout>
+        <LinearLayout
+            android:id="@+id/project_lay1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/search_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="45dp"
+            android:orientation="horizontal">
 
-</RelativeLayout>
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="#4D000000"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="0dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/three_star"
+                    android:layout_gravity="right"
+                    android:layout_margin="10dp"/>
+
+                <TextView
+                    android:id="@+id/upcoming_ev"
+                    android:layout_width="96dp"
+                    android:layout_height="57dp"
+                    android:layout_gravity="center"
+                    android:text="@string/upcoming_ev3"
+                    android:textAppearance="@style/upcoming_ev3"
+
+                    />
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="#4D000000"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="0dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/two_star"
+                    android:layout_gravity="right"
+                    android:layout_margin="10dp"/>
+
+                <TextView
+                    android:id="@+id/projects"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_gravity="center"
+                    android:text="@string/projects2"
+                    android:textAppearance="@style/projects2"
+
+
+                    />
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/project_lay2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/project_lay1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="#4D000000"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="0dp" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="#4D000000"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="0dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/five_star"
+                    android:layout_margin="10dp"/>
+
+                <TextView
+                    android:id="@+id/communities"
+                    android:layout_width="127dp"
+                    android:layout_height="23dp"
+                    android:layout_gravity="center"
+                    android:text="@string/communities2"
+                    android:textAppearance="@style/communities2" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/project_lay3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/project_lay2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="#4D000000"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="0dp" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="#4D000000"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="0dp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
 
 </ScrollView>

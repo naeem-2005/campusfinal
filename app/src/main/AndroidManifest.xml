@@ -12,11 +12,12 @@
         android:theme="@style/Theme.CampusFinal"
         tools:targetApi="31">
         <activity
-            android:name=".ProjectActivity"
+            android:name=".ui.home.project.ProjectActivity"
             android:exported="false" />
         <activity
             android:name=".ui.home.upcomingevent.UpcomingEventActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".MainActivity"/>
         <activity
             android:name=".ui.home.project.infotech.InfoTechActivity"
             android:exported="false" />

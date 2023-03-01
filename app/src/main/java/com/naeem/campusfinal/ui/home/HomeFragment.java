@@ -20,13 +20,14 @@ import android.widget.TextView;
 
 import com.naeem.campusfinal.R;
 import com.naeem.campusfinal.authentication.LoginActivity;
+import com.naeem.campusfinal.ui.home.project.ProjectActivity;
 import com.naeem.campusfinal.ui.home.upcomingevent.UpcomingEventActivity;
 
 
 public class HomeFragment extends Fragment {
 
     private ActionBar actionBar;
-    private TextView upcoming_more;
+    private TextView upcoming_more,project_more;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -36,6 +37,8 @@ public class HomeFragment extends Fragment {
        View view= inflater.inflate(R.layout.fragment_home, container, false);
 
        upcoming_more = (TextView) view.findViewById(R.id.upcoming_more1);
+       project_more = (TextView) view.findViewById(R.id.more_project);
+
 
         actionBar = ((AppCompatActivity)getActivity()).getSupportActionBar();
         ColorDrawable colorDrawable  = new ColorDrawable(Color.parseColor("#d3356e"));
@@ -52,6 +55,15 @@ public class HomeFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Intent intent1 = new Intent(getActivity(),UpcomingEventActivity.class);
+                startActivity(intent1);
+                getActivity().finish();
+            }
+        });
+
+        project_more.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent1 = new Intent(getActivity(), ProjectActivity.class);
                 startActivity(intent1);
                 getActivity().finish();
             }

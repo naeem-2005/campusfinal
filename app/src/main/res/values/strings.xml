@@ -16,10 +16,14 @@
     <string name="upcoming_ev">Upcoming Events</string>
     <string name="upcoming_ev3">Upcoming\nEvents</string>
     <string name="projects2">Projects</string>
+    <string name="search_hint">Search events,projects,communities</string>
+    <string name="art">Art</string>
 
+    <string name="projects5">Projects</string>
     <string name="communities2">Communities</string>
-
-
+    <string name="communities">Communities</string>
+    <string name="information">Information &amp; Technology</string>
+    <string name="cultural">Cultural</string>
     <string name="more_">more ></string>
     <string name="projects">Projects</string>
 </resources>

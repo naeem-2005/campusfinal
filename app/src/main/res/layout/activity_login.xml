@@ -82,7 +82,7 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="400dp"
+            android:layout_marginTop="410dp"
             android:layout_toRightOf="@id/password1"
             android:textColorHint="#80FFFFFF"
             app:passwordToggleEnabled="true"

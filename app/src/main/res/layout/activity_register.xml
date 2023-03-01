@@ -44,7 +44,7 @@
             android:hint="first name"
             android:inputType="text"
             android:paddingLeft="14dp"
-            android:textColor="#3c3c3c"
+            android:textColor="@color/white"
             android:textColorHint="#80FFFFFF"
             android:textSize="15dp" />
 
@@ -75,7 +75,7 @@
             android:hint="surname"
             android:inputType="text"
             android:paddingLeft="14dp"
-            android:textColor="#3c3c3c"
+            android:textColor="@color/white"
             android:textColorHint="#80FFFFFF"
             android:textSize="15dp" />
 
@@ -133,7 +133,7 @@
             android:hint="email address"
             android:inputType="textEmailAddress"
             android:paddingLeft="14dp"
-            android:textColor="#3c3c3c"
+            android:textColor="@color/white"
             android:textColorHint="#80FFFFFF"
             android:textSize="15dp" />
 
@@ -165,7 +165,7 @@
             android:hint="username"
             android:inputType="textVisiblePassword|textNoSuggestions"
             android:paddingLeft="14dp"
-            android:textColor="#3c3c3c"
+            android:textColor="@color/white"
             android:textColorHint="#80FFFFFF"
             android:textSize="15dp" />
 
@@ -212,7 +212,7 @@
                     android:hint="create password"
                     android:inputType="textPassword"
                     android:paddingLeft="10dp"
-                    android:textColor="#ffff"
+                    android:textColor="@color/white"
                     android:textSize="15dp" />
             </com.google.android.material.textfield.TextInputLayout>
         </LinearLayout>
@@ -225,7 +225,7 @@
             android:layout_marginLeft="70dp"
             android:layout_marginTop="15dp"
             android:text="Confirm password"
-            android:textColor="#ffffff"
+            android:textColor="@color/white"
             android:textSize="18dp"
             android:textStyle="bold" />
 
@@ -249,7 +249,7 @@
                 android:hint="confirm password"
                 android:inputType="textPassword"
                 android:paddingLeft="10dp"
-                android:textColor="#ffff"
+                android:textColor="@color/white"
                 android:textSize="15dp" />
 
         </com.google.android.material.textfield.TextInputLayout>
