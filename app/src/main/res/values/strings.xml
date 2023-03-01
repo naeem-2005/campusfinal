@@ -14,5 +14,7 @@
     <string name="enter_email">Enter Email</string>
     <string name="logout"><u>Logout</u></string>
     <string name="upcoming_ev">Upcoming Events</string>
+
+
     <string name="more_">more ></string>
 </resources>
