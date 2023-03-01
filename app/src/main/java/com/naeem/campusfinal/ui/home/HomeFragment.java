@@ -1,5 +1,7 @@
 package com.naeem.campusfinal.ui.home;
 
+import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -14,19 +16,26 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.TextView;
 
 import com.naeem.campusfinal.R;
+import com.naeem.campusfinal.authentication.LoginActivity;
+import com.naeem.campusfinal.ui.home.upcomingevent.UpcomingEventActivity;
 
 
 public class HomeFragment extends Fragment {
 
     private ActionBar actionBar;
+    private TextView upcoming_more;
 
+    @SuppressLint("MissingInflatedId")
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
        View view= inflater.inflate(R.layout.fragment_home, container, false);
+
+       upcoming_more = (TextView) view.findViewById(R.id.upcoming_more1);
 
         actionBar = ((AppCompatActivity)getActivity()).getSupportActionBar();
         ColorDrawable colorDrawable  = new ColorDrawable(Color.parseColor("#d3356e"));
@@ -38,6 +47,16 @@ public class HomeFragment extends Fragment {
 
         window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
         window.setStatusBarColor(ContextCompat.getColor(getActivity(),R.color.home_notificationbar_color));
+
+        upcoming_more.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent1 = new Intent(getActivity(),UpcomingEventActivity.class);
+                startActivity(intent1);
+                getActivity().finish();
+            }
+        });
+
         return view;
 
 

@@ -12,7 +12,7 @@
         android:theme="@style/Theme.CampusFinal"
         tools:targetApi="31">
         <activity
-            android:name=".UpcomingEventActivity"
+            android:name=".ui.home.upcomingevent.UpcomingEventActivity"
             android:exported="false" />
         <activity
             android:name=".ui.home.project.infotech.InfoTechActivity"
