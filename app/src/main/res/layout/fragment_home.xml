@@ -139,7 +139,8 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/join_btn_bg"
-                                android:text="Join" />
+                                android:text="Join"
+                                android:textColor="@color/white"/>
 
                         </LinearLayout>
 
