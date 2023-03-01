@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">CampusFinal</string>
+    <string name="durga_prasa">Durga Prasad Baljeet Singh (PG) College, Anoopshahr</string>
+    <string name="campus_app">CAMPUS APP</string>
+    <string name="create_new_">Create new account</string>
+    <string name="forgot_pass">forgot password ?</string>
+    <string name="click_here"><u>click here</u></string>
+    <string name="login"><u>Login</u></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="start">Start</string>
+    <string name="close">Close</string>
+    <string name="to_reset_pa">To reset password\n we will send you a link on your registered email address</string>
+    <string name="enter_email">Enter Email</string>
+
+</resources>

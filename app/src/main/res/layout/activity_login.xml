@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#671935"
+    android:clipToOutline="true"
+    tools:context=".authentication.LoginActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="250dp"
+        android:text="LOGIN "
+        android:textColor="@color/white"
+        android:textSize="40dp"
+        android:textStyle="bold"
+
+        />
+
+    <LinearLayout
+        android:id="@+id/draw2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        >
+
+        <TextView
+            android:id="@+id/user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="350dp"
+            android:text="Username"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="350dp"
+            android:autofillHints="username"
+            android:background="@drawable/login_bg"
+            android:hint="username"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:textColor="#3c3c3c"
+            android:textColorHint="#80FFFFFF"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/draw3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        >
+
+        <TextView
+            android:id="@+id/password1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="400dp"
+            android:text="Password "
+            android:textColor="@color/white"
+            android:textSize="20dp"
+
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="400dp"
+            android:layout_toRightOf="@id/password1"
+            android:textColorHint="#80FFFFFF"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="#80FFFFFF"
+
+
+            >
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password3"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+
+                android:layout_marginLeft="50dp"
+                android:autofillHints="password"
+                android:background="@drawable/login_bg"
+                android:hint="password"
+
+                android:inputType="textWebPassword"
+                android:paddingLeft="10dp"
+                android:textColor="#ffff"
+                android:textSize="15dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="120dp"
+        android:layout_height="43dp"
+        android:layout_below="@id/draw3"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/login_btn_bg"
+        android:text="Continue"
+        android:textColor="#ffff"
+        android:textSize="15dp" />
+
+    <LinearLayout
+        android:id="@+id/draw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/forgot_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="25dp"
+            android:text="@string/forgot_pass"
+            android:textAppearance="@style/forgot_pass"
+
+            />
+
+        <TextView
+            android:id="@+id/click_here"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="25dp"
+            android:layout_toRightOf="@id/forgot_pass"
+            android:text="@string/click_here"
+
+            android:textAppearance="@style/click_here"
+
+            />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/create_new_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/draw"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/create_new_"
+        android:textAppearance="@style/create_new_"
+
+        />
+
+
+</RelativeLayout>

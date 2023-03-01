@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+
+
+        <FrameLayout
+            android:id="@+id/frame_layout"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="?attr/actionBarSize"
+            >
+
+
+        </FrameLayout>
+
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            app:labelVisibilityMode="labeled"
+            style="@style/Outlinebottomnavigation"
+
+            app:menu="@menu/bottom_nav" >
+
+
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+
+    </RelativeLayout>
+    
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/dashboard_item"
+        app:menu="@menu/dashboard_item"
+     style="@style/bottomnavigation"
+        app:itemTextColor="@color/white"
+        app:itemIconTint="@color/white"
+        android:fitsSystemWindows="false"
+        app:itemTextAppearance="?android:attr/textAppearanceMedium"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/dashboard_header"
+        />
+
+
+</androidx.drawerlayout.widget.DrawerLayout>
+
+
+
+

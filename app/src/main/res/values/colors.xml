@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="splash_notificationbar_color">#d3356e</color>
+    <color name="login_notificationbar_color">#671935</color>
+    <color name="fgpassword_notificationbar_color">#671935</color>
+    <color name="register_notificationbar_color">#671935</color>
+    <color name="home_notificationbar_color">#96264e</color>
+    <color name="profile_notificationbar_color">#1f2134</color>
+    <color name="bottombar">#CC2C2F49</color>
+    <color name="bottombar2">#BF141622</color>
+    <color name="icon">#96264e</color>
+</resources>
