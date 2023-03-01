@@ -25,10 +25,11 @@
         </item>
 
     </style>
+
     <style name="campus_app">
 
         <item name="android:textSize">
-            64sp
+            60sp
         </item>
 
         <item name="android:textColor">
@@ -36,7 +37,7 @@
         </item>
 
     </style>
-    
+
     <style name="create_new_">
 
         <item name="android:textSize">
@@ -48,6 +49,7 @@
         </item>
 
     </style>
+
     <style name="forgot_pass">
 
         <item name="android:textSize">
@@ -59,6 +61,7 @@
         </item>
 
     </style>
+
     <style name="click_here">
 
         <item name="android:textSize">
@@ -70,13 +73,14 @@
         </item>
 
     </style>
-    <style  name="transparentbottombar"  parent="Widget.Design.BottomNavigationView">
+
+    <style name="transparentbottombar" parent="Widget.Design.BottomNavigationView">
         <item name="android:background">@color/bottombar</item>
         <item name="itemIconTint">@color/icon</item>
 
 
-
     </style>
+
     <style name="Outlinebottomnavigation" parent="Widget.Design.BottomNavigationView">
         <item name="itemTextColor">@drawable/bottom_nav_item_outline_color</item>
         <item name="itemIconTint">@drawable/bottom_nav_item_outline_color</item>
@@ -84,6 +88,7 @@
 
 
     </style>
+
     <style name="bottomnavigation" parent="Widget.Design.BottomNavigationView">
         <item name="itemTextColor">@drawable/bottom_nav_item_outline_color</item>
         <item name="itemIconTint">@drawable/bottom_nav_item_outline_color</item>
@@ -91,6 +96,7 @@
 
 
     </style>
+
     <style name="to_reset_pa">
 
         <item name="android:textSize">
@@ -102,6 +108,7 @@
         </item>
 
     </style>
+
     <style name="enter_email">
 
         <item name="android:textSize">
@@ -113,8 +120,17 @@
         </item>
 
     </style>
+    <style name="logout">
 
+        <item name="android:textSize">
+            20sp
+        </item>
 
+        <item name="android:textColor">
+            #00A3FF
+        </item>
+
+    </style>
 
 
 </resources>

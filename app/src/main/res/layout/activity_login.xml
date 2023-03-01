@@ -65,7 +65,7 @@
         <TextView
             android:id="@+id/password1"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
             android:layout_marginLeft="40dp"
             android:layout_marginTop="400dp"
             android:text="Password "

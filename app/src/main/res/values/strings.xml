@@ -12,5 +12,6 @@
     <string name="close">Close</string>
     <string name="to_reset_pa">To reset password\n we will send you a link on your registered email address</string>
     <string name="enter_email">Enter Email</string>
+    <string name="logout"><u>Logout</u></string>
 
 </resources>
