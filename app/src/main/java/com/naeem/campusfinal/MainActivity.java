@@ -25,7 +25,7 @@ import com.naeem.campusfinal.ui.search.SearchFragment;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     private BottomNavigationView bottomNavigationView;
-
+//Hello Naeem brother
 
     private NavigationView navigationView;
     private DrawerLayout drawerLayout ;
