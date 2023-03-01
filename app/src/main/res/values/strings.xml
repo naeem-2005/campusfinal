@@ -14,6 +14,10 @@
     <string name="enter_email">Enter Email</string>
     <string name="logout"><u>Logout</u></string>
     <string name="upcoming_ev">Upcoming Events</string>
+    <string name="upcoming_ev3">Upcoming\nEvents</string>
+    <string name="projects2">Projects</string>
+
+    <string name="communities2">Communities</string>
 
 
     <string name="more_">more ></string>
