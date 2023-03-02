@@ -39,10 +39,6 @@ public class RegisterActivity extends AppCompatActivity {
 
         getSupportActionBar().setTitle("Registration");
 
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setDisplayShowHomeEnabled(false);
-        getSupportActionBar().setHomeAsUpIndicator(R.drawable.back_icon);
-
         Window window = this.getWindow();
         window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
 
@@ -80,5 +76,11 @@ public class RegisterActivity extends AppCompatActivity {
             }
         });
 
+    }
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
+        startActivity(intent);
+        finish();
     }
 }

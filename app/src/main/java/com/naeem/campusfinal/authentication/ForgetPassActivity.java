@@ -3,6 +3,7 @@ package com.naeem.campusfinal.authentication;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -17,9 +18,9 @@ public class ForgetPassActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_forgrt_pass);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setDisplayShowHomeEnabled(false);
-        getSupportActionBar().setHomeAsUpIndicator(R.drawable.back_icon);
+//        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+//        getSupportActionBar().setDisplayShowHomeEnabled(false);
+//        getSupportActionBar().setHomeAsUpIndicator(R.drawable.back_icon);
 
 
         getSupportActionBar().setTitle("Forget Password");
@@ -33,5 +34,12 @@ public class ForgetPassActivity extends AppCompatActivity {
         window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
         window.setStatusBarColor(ContextCompat.getColor(this,R.color.fgpassword_notificationbar_color));
 
+    }
+
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(ForgetPassActivity.this, LoginActivity.class);
+        startActivity(intent);
+        finish();
     }
 }

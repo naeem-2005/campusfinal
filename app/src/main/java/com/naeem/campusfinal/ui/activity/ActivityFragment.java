@@ -1,5 +1,7 @@
 package com.naeem.campusfinal.ui.activity;
 
+import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -16,14 +18,18 @@ import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.naeem.campusfinal.R;
+import com.naeem.campusfinal.ui.home.upcomingevent.UpcomingEventActivity;
 
 
 public class ActivityFragment extends Fragment {
 
     private Button projectbtn, eventbtn, communitybtn;
+    private TextView joinEvent;
 
+    @SuppressLint("MissingInflatedId")
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -33,6 +39,8 @@ public class ActivityFragment extends Fragment {
         projectbtn = (Button) view.findViewById(R.id.projectbtn);
         eventbtn = (Button) view.findViewById(R.id.eventsbtn);
         communitybtn = (Button) view.findViewById(R.id.communitiesbtn);
+
+        joinEvent = (TextView)view.findViewById(R.id.joinEvent);
 
         ActionBar actionBar = ((AppCompatActivity) getActivity()).getSupportActionBar();
 
@@ -67,6 +75,15 @@ public class ActivityFragment extends Fragment {
                 transaction.addToBackStack(null);
                 transaction.commit();
 
+            }
+        });
+
+        joinEvent.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), UpcomingEventActivity.class);
+                startActivity(intent);
+                getActivity().finish();
             }
         });
 

@@ -14,7 +14,10 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 
+import com.naeem.campusfinal.MainActivity;
 import com.naeem.campusfinal.R;
+import com.naeem.campusfinal.authentication.ForgetPassActivity;
+import com.naeem.campusfinal.authentication.LoginActivity;
 import com.naeem.campusfinal.ui.home.project.infotech.InfoTechActivity;
 
 public class ProjectActivity extends AppCompatActivity {

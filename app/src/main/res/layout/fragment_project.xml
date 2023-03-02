@@ -64,16 +64,43 @@
 
             </LinearLayout>
 
+            <RelativeLayout
+                android:id="@+id/no_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/events"
+                android:layout_marginTop="198dp"
+                android:layout_centerHorizontal="true">
 
+                <ImageView
+                    android:id="@+id/star1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/no_data_star"
+                    android:layout_centerHorizontal="true"
+                    />
+
+                <TextView
+                    android:layout_below="@id/star1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/it_seems_li"
+                    android:layout_marginTop="8dp"
+                    android:textAppearance="@style/it_seems_li"
+                    />
+            </RelativeLayout>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:layout_marginTop="500dp"
-                android:text="Project fragment"
-                android:textColor="@color/white"
-                android:textSize="30dp" />
-
+                android:text="join now"
+                android:id="@+id/joinProject"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textColor="#00a3ff"
+                android:layout_below="@id/no_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                />
 
         </RelativeLayout>
 

@@ -24,12 +24,11 @@
             android:exported="false" />
         <activity
             android:name=".authentication.ForgetPassActivity"
-            android:exported="true"
-            android:parentActivityName=".authentication.LoginActivity" />
+            android:exported="true" />
         <activity
             android:name=".authentication.RegisterActivity"
             android:exported="true"
-            android:parentActivityName=".authentication.LoginActivity" />
+            />
         <activity
             android:name=".authentication.LoginActivity"
             android:exported="true" />

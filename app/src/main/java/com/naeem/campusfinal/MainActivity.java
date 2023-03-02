@@ -3,6 +3,7 @@ package com.naeem.campusfinal;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
@@ -12,6 +13,7 @@ import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.NavigationUI;
 
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.sax.RootElement;
 import android.view.MenuItem;
@@ -143,12 +145,33 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     @Override
     public void onBackPressed() {
 
+
         if (bottomNavigationView.getSelectedItemId() == R.id.navigation_home){
-            super.onBackPressed();
-            finish();
+
+            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+            builder.setMessage("Do you want to exit?");
+            builder.setCancelable(true);
+            builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialogInterface, int i) {
+                    finish();
+                }
+            });
+            builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialogInterface, int i) {
+
+                    dialogInterface.cancel();
+
+                }
+            });
+
+            AlertDialog dialog = builder.create();
+            dialog.show();
         }
         else {
             bottomNavigationView.setSelectedItemId(R.id.navigation_home);
         }
     }
+
 }

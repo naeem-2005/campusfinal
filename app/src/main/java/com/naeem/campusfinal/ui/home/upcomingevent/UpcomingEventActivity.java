@@ -6,13 +6,17 @@ import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.Window;
 import android.view.WindowManager;
 
+import com.naeem.campusfinal.MainActivity;
 import com.naeem.campusfinal.R;
+import com.naeem.campusfinal.authentication.ForgetPassActivity;
+import com.naeem.campusfinal.authentication.LoginActivity;
 import com.naeem.campusfinal.ui.home.HomeFragment;
 
 public class UpcomingEventActivity extends AppCompatActivity {
@@ -37,5 +41,4 @@ public class UpcomingEventActivity extends AppCompatActivity {
         window.setStatusBarColor(ContextCompat.getColor(this,R.color.profile_notificationbar_color));
 
     }
-
 }
