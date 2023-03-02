@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container3"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#2C2F49"
-    tools:context=".ui.activity.ActivityFragment">
+    tools:context=".ui.activity.projectFragment">
 
     <FrameLayout
-        android:id="@+id/container4"
+        android:id="@+id/container5"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -21,16 +22,17 @@
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="60dp"
+
                 android:orientation="horizontal">
 
                 <Button
 
-                    android:id="@+id/eventsbtn"
+                    android:id="@+id/eventbtn2"
                     android:layout_width="84dp"
                     android:layout_height="33dp"
                     android:layout_marginRight="15dp"
                     android:layout_weight="1"
-                    android:background="@drawable/filled_btn_bg"
+                    android:background="@drawable/empty_btn_bg"
                     android:text="Events"
                     android:textColor="@color/white"
                     android:textSize="16dp"
@@ -43,7 +45,7 @@
                     android:layout_height="33dp"
                     android:layout_marginRight="15dp"
                     android:layout_weight="1"
-                    android:background="@drawable/empty_btn_bg"
+                    android:background="@drawable/filled_btn_bg"
                     android:text="Projects"
                     android:textColor="#ffffff"
                     android:textSize="16dp"
@@ -51,7 +53,7 @@
                     />
 
                 <Button
-                    android:id="@+id/communitiesbtn"
+                    android:id="@+id/communitiesbtn2"
                     android:layout_width="131dp"
                     android:layout_height="33dp"
                     android:layout_weight="1"
@@ -68,11 +70,13 @@
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
                 android:layout_marginTop="500dp"
-                android:text="Events fragment"
+                android:text="Project fragment"
                 android:textColor="@color/white"
                 android:textSize="30dp" />
 
 
         </RelativeLayout>
+
+
     </FrameLayout>
 </ScrollView>

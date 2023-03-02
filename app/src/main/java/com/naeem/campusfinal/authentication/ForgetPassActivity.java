@@ -18,7 +18,9 @@ public class ForgetPassActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_forgrt_pass);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(false);
+        getSupportActionBar().setHomeAsUpIndicator(R.drawable.back_icon);
+
 
         getSupportActionBar().setTitle("Forget Password");
         ColorDrawable colorDrawable  = new ColorDrawable(Color.parseColor("#671935"));

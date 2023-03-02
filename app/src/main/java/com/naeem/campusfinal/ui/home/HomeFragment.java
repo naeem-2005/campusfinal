@@ -4,6 +4,7 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 
 import androidx.appcompat.app.ActionBar;
@@ -41,8 +42,8 @@ public class HomeFragment extends Fragment {
 
 
         actionBar = ((AppCompatActivity)getActivity()).getSupportActionBar();
-        ColorDrawable colorDrawable  = new ColorDrawable(Color.parseColor("#d3356e"));
-        actionBar.setBackgroundDrawable(colorDrawable);
+        Drawable d=getResources().getDrawable(R.drawable.toolbar);
+        actionBar.setBackgroundDrawable(d);
         actionBar.setTitle("Hey User,");
 
         Window window = getActivity().getWindow();

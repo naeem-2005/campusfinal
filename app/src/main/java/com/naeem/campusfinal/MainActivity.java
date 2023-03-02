@@ -1,6 +1,7 @@
 package com.naeem.campusfinal;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
@@ -44,6 +45,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
          drawerLayout.addDrawerListener(toggle);
          toggle.syncState();
          getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+
          navigationView2.setNavigationItemSelectedListener(this);
 
         bottomNavigationView=findViewById(R.id.bottomNavigation);

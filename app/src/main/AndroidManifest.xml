@@ -16,8 +16,8 @@
             android:exported="false" />
         <activity
             android:name=".ui.home.upcomingevent.UpcomingEventActivity"
-            android:exported="false"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity"
+            android:exported="false" />
         <activity
             android:name=".ui.home.project.infotech.InfoTechActivity"
             android:parentActivityName=".ui.home.project.ProjectActivity"
