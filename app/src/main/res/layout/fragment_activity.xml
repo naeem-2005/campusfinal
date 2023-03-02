@@ -1,14 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#2C2F49"
     tools:context=".ui.activity.ActivityFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="activity" />
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
 
-</FrameLayout>
+
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:id="@+id/events"
+            android:layout_marginTop="60dp"
+
+           android:layout_centerHorizontal="true"
+           >
+           <Button
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+              android:layout_margin="8dp"
+              android:id="@+id/events1"
+               android:text="Events"
+                android:layout_weight="1"
+               android:background="@drawable/buttonactivity"
+               android:textColor="@color/white"
+
+               />
+           <Button
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:background="@drawable/buttonactivity"
+               android:id="@+id/project10"
+               android:text="Projects"
+               android:layout_margin="8dp"
+                 android:layout_weight="1"
+               android:textColor="#ffffff"
+
+               />
+           <Button
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:background="@drawable/buttonactivity"
+               android:id="@+id/communities1"
+               android:text="Communities"
+               android:layout_margin="8dp"
+                android:layout_weight="1"
+               android:textColor="@color/white"
+
+               />
+
+       </LinearLayout>
+
+   </RelativeLayout>
+
+</ScrollView>
