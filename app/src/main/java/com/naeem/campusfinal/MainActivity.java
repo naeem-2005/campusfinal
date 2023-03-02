@@ -12,6 +12,7 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.NavigationUI;
 
 import android.os.Bundle;
+import android.sax.RootElement;
 import android.view.MenuItem;
 import android.widget.Toast;
 
@@ -88,11 +89,17 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         FragmentManager fragmentManager=getSupportFragmentManager();
         FragmentTransaction ft=fragmentManager.beginTransaction();
 
-        if (flag)
+        if (flag) {
 
             ft.add(R.id.frame_layout, fragment);
-       else
+//            String ROOT_FRAGMENT_TAG = null;
+//            fragmentManager.popBackStack(ROOT_FRAGMENT_TAG, fragmentManager.POP_BACK_STACK_INCLUSIVE);
+//            ft.addToBackStack(ROOT_FRAGMENT_TAG);
+        }
+       else {
             ft.replace(R.id.frame_layout, fragment);
+//            ft.addToBackStack(null);
+        }
         ft.commit();
 
     }
@@ -128,5 +135,17 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 break;
         }
         return true;
+    }
+
+    @Override
+    public void onBackPressed() {
+
+        if (bottomNavigationView.getSelectedItemId() == R.id.navigation_home){
+            super.onBackPressed();
+            finish();
+        }
+        else {
+            bottomNavigationView.setSelectedItemId(R.id.navigation_home);
+        }
     }
 }

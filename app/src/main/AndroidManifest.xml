@@ -20,6 +20,7 @@
             android:parentActivityName=".MainActivity"/>
         <activity
             android:name=".ui.home.project.infotech.InfoTechActivity"
+            android:parentActivityName=".ui.home.project.ProjectActivity"
             android:exported="false" />
         <activity
             android:name=".authentication.ForgetPassActivity"
