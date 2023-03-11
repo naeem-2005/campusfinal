@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "551377537010",
+    "project_id": "kushcampusapp",
+    "storage_bucket": "kushcampusapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:551377537010:android:ea4b263aec170836ab8d6b",
+        "android_client_info": {
+          "package_name": "com.naeem.campusfinal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "551377537010-8fv5ij8q9mv6b2el9a2qs5k7c8tt93gm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8UVkC87sVLfWwC01gYMhz_wcp--h72N4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "551377537010-8fv5ij8q9mv6b2el9a2qs5k7c8tt93gm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

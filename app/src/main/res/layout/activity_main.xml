@@ -6,52 +6,42 @@
     android:id="@+id/drawer_layout"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    
+
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".MainActivity">
+        android:layout_height="match_parent">
 
-
-
-        <FrameLayout
-            android:id="@+id/frame_layout"
-            android:name="androidx.navigation.fragment.NavHostFragment"
+        <fragment
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginBottom="?attr/actionBarSize"
-            >
-
-
-        </FrameLayout>
-
-
+            android:id="@+id/frame_layout"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            app:navGraph="@navigation/mobile_navigation"
+            app:defaultNavHost="true"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/bottomNavigationView"/>
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/bottomNavigation"
             android:layout_width="match_parent"
-            android:layout_height="53dp"
-            android:layout_alignParentBottom="true"
+            android:id="@+id/bottomNavigationView"
+            android:layout_height="50dp"
+            app:menu="@menu/bottom_nav"
             app:labelVisibilityMode="selected"
             style="@style/Outlinebottomnavigation"
-
-            app:menu="@menu/bottom_nav" >
-
-
-
-        </com.google.android.material.bottomnavigation.BottomNavigationView>
-
-
+            app:itemTextColor="@color/white"
+            android:layout_alignParentBottom="true"/>
 
     </RelativeLayout>
-    
+
     <com.google.android.material.navigation.NavigationView
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:id="@+id/dashboard_item"
         app:menu="@menu/dashboard_item"
-     style="@style/bottomnavigation"
+        style="@style/bottomnavigation"
         app:itemTextColor="@color/white"
         app:itemIconTint="@color/white"
         android:fitsSystemWindows="false"
@@ -59,6 +49,7 @@
         android:layout_gravity="start"
         app:headerLayout="@layout/dashboard_header"
         />
+
 
 
 </androidx.drawerlayout.widget.DrawerLayout>
